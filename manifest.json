@@ -1,0 +1,28 @@
+{
+  "name": "checklist exporter",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "export checklist",
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js",
+      "lib/FileSaver.min.js",
+      "lib/js-xlsx/jszip.js",
+      "lib/js-xlsx/xlsx.full.min.js"
+    ]
+  },
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "downloads.open",
+    "cookies",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
